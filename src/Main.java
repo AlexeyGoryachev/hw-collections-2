@@ -21,10 +21,14 @@ public class Main {
         }
     }
     public static void printEvenNums(List<Integer> nums) {
+        Set<Integer> evenNums = new TreeSet<>();
         for (Integer num : nums) {
             if (num % 2 == 0) {
                 System.out.println(num);
             }
+        }
+        for (Integer num : evenNums) {
+            System.out.println(num);
         }
     }
     public static void printUniqueWords(List<String> words) {
